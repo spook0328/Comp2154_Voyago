@@ -14,6 +14,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+// Add services for controllers with views. Necessary for MVC functionality in the application.
+builder.Services.AddControllersWithViews();
+
 // Set False for now
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
