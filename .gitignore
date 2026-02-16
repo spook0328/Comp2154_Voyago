@@ -1,0 +1,12 @@
+bin/
+obj/
+.idea/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.DS_Store
+
+# Visual Studio files
+.vs/
+
+wwwroot/logs/*.txt
