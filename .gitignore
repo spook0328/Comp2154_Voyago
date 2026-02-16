@@ -10,3 +10,4 @@ riderModule.iml
 .vs/
 
 wwwroot/logs/*.txt
+/TripPlanner/TripPlanner/appsettings.json
