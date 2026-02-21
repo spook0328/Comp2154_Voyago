@@ -1,13 +1,53 @@
+# Visual Studio / JetBrains Rider / IDEs
+.vs/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
 bin/
 obj/
-.idea/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
-.DS_Store
+out/
 
-# Visual Studio files
-.vs/
+# Rider
+*.DotSettings.user
 
-wwwroot/logs/*.txt
-# /TripPlanner/TripPlanner/appsettings.json
+# ASP.NET / .NET Core
+# appsettings.Development.json
+
+# Publish / deployment
+*.Publish.xml
+*.pubxml
+*.pubxml.user
+
+# Logs
+*.log
+
+# Resharper
+_ReSharper*/
+
+# Database / SQLite files (if any local dev db)
+*.db
+
+# Package directories
+packages/
+
+# npm / node_modules (if using front-end)
+node_modules/
+
+# Generated files
+*.g.cs
+*.g.i.cs
+*.generated.cs
+*.Designer.cs
+*.AssemblyInfo.cs
+*.pdb
+*.exe
+*.dll
+*.cache
+*.editorconfig
+
+# Others
+*.DS_Store
