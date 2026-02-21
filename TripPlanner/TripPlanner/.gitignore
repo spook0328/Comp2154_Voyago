@@ -21,12 +21,14 @@ appsettings.Development.json
 *.Publish.xml
 *.pubxml
 *.pubxml.user
+riderModule.iml
 
 # Logs
 *.log
 
 # Resharper
 _ReSharper*/
+/_ReSharper.Caches/
 
 # Database / SQLite files (if any local dev db)
 *.db

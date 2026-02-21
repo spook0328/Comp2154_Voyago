@@ -8,392 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c09747c4-360f-4b30-8104-53316ea596bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TripPlanner/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TripPlanner/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TripPlanner/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Areas/Identity/Pages/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Controllers/HomeController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Data/Migrations/00000000000000_CreateIdentitySchema.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Models/ErrorViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/TripPlanner.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/Home/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/Home/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/Shared/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/Views/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/app.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Humanizer.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.UI.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.Build.Locator.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.Data.Sqlite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.Design.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Sqlite.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Mono.TextTemplating.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/Npgsql.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/SQLitePCLRaw.batteries_v2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/SQLitePCLRaw.core.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/SQLitePCLRaw.provider.e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/System.CodeDom.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/System.Composition.AttributedModel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/System.Composition.Convention.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/System.Composition.Hosting.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/System.Composition.Runtime.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/System.Composition.TypedParts.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/TripPlanner.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/TripPlanner.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/TripPlanner.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/TripPlanner.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/TripPlanner.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/TripPlanner.staticwebassets.endpoints.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/TripPlanner.staticwebassets.runtime.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/app.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/browser-wasm/nativeassets/net9.0/e_sqlite3.a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-arm/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-arm64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-armel/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-mips64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-musl-arm/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-musl-arm64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-musl-s390x/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-musl-x64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-ppc64le/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-s390x/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-x64/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/linux-x86/native/libe_sqlite3.so" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/maccatalyst-arm64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/maccatalyst-x64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/osx-arm64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/osx-x64/native/libe_sqlite3.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/win-arm/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/win-arm64/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/win-x64/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/runtimes/win-x86/native/e_sqlite3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlan.D744CCF8.Up2Date" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.RazorAssemblyInfo.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.RazorAssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/TripPlanner.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/0k1i85ntyh-6cfz1n2cew.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/0ojqq0hpji-cosvhxvwiu.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/14ipv7q33s-bqjiyaj88i.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/168ukrbd9d-q9ht133ko3.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/1fc4q00scq-khv3u5hwcm.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/1l0glj8t8f-fsbi9cje9m.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/1sjw1dgmf5-9vr69e8ynj.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/1tnw3wo41v-d6nrnj6jjx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/23uzu3wvbo-8vyfqsqgz1.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/2c6jks6f8o-83jwlth58m.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/2tikzqlmtu-ag7o75518u.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/32dmj3dmd9-r4e9w2rdcm.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/3oy58u1yf2-b9sayid5wm.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/3tj8of1iop-xtxxf3hu2r.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/3tzsqhslk9-ub07r2b239.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/3w3ufi26t5-03hjc8e09r.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/47012z8l2l-pj5nd1wqec.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/4grwwsufch-6pdc2jztkx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/4vzefxwp2m-46ein0sx1k.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/5pwxed980b-zub09dkrxp.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/5rarm05zwt-u9q1upor1n.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/64ssonph02-48y08845bh.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/7o8oyvng68-tdbxkamptv.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/88isp15h8h-d4r6k3f320.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/8axix7wldr-fsbi9cje9m.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/8wczd1uffn-x0q3zqp4vz.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/8xykfy6qmd-r4e9w2rdcm.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/8y9klve03k-wl58j5mj3v.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/9glsckmvxo-aexeepp0ev.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/9muusbdg0a-x0q3zqp4vz.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/a3ygkwa5zy-2z0ns9nrw6.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/a5gnu102ae-356vix0kms.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/agmxoy9fmq-hd3gran6i8.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ak3c4eagqy-ttgo8qnofa.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/b9lhb08218-ttgo8qnofa.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/bh4v3mdph9-v0zj4ognzu.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/bww8ud00yd-ausgxo2sd3.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/c66bpq0eyv-mrlpezrjn3.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ccet6kbjcb-sejl45xvog.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/crexjl6faw-mlv21k5csn.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/cynp17w084-c2oey78nd0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/d4naock28i-pj5nd1wqec.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/d5z9sfpxbi-rzd6atqjts.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/eb27mqwgz2-erw9l3u2r3.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/edcrak57d7-k8d9w2qqmf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/f10dx7p7p1-qesaa3a1fm.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/fl68wbezjc-43atpzeawx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/fsa6qhdgw4-worgj0nhwm.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/h87onxmkwx-ee0r1s7dh0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/h9vwtoirpy-j5mq2jizvt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/hh8ihyobdx-d7shbmvgxk.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/higufxz8op-vr1egmr9el.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/huz00wmm4l-j5mq2jizvt.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/iaue9ocy2x-h1s4sie4z3.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/igscs4x0yk-h1s4sie4z3.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ivy2s9gwh5-iovd86k7lj.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/iznc766avz-nvvlpmu67g.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/j3hwsq15kh-47otxtyo56.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/j9swiz3yzq-90yqlj465b.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/jhaxz9k5ub-ausgxo2sd3.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ju1b6g02jy-c2oey78nd0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/k8b25g0zwc-b7pk76d08c.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/kumhiha51z-iovd86k7lj.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/l186vlgaag-37tfw0ft22.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/l4on7hxaj5-ltid2c489k.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ldxy2n3w6q-356vix0kms.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/lr5hmrr0j7-493y06b0oq.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/mvpkg8ajf5-nvvlpmu67g.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/mw5mk29pdi-kbrnm935zg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/n1th4luzox-hrwsygsryq.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/nakkinfp92-4d85u1mtcx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/nezrqnk58p-muycvpuwrr.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/nlrl0f3xs3-jd9uben2k1.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/np3u03cogo-fvhpjtyr6v.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ns4583i71s-s35ty4nyc5.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/o3ktzp4e55-t1cqhe9u97.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/o5k23vqhrk-06098lyss8.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ofa40bqe71-b9sayid5wm.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/op6zmiy12r-87fc7y1x7t.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/oxk5o6czdw-fvhpjtyr6v.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/p5arz2tqo5-4094rpi4f9.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/pogzkicjpz-0j3bgjxly4.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/pz11excb1x-aexeepp0ev.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/q3naettu8c-4v8eqarkd7.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/qfr28sqcy1-ft3s53vfgj.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/qg56ua41jp-0j3bgjxly4.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/qjwp5065ot-jd9uben2k1.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/qnf4peaz5r-gye83jo8yx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/qs7ipnhwjy-c63t5i9ira.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/r01jlr52ew-m9qm4tazc0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/r7d4bhju1c-xvp3kq03qx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/rh65p086id-c2jlpeoesf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/rsc7qacj1u-hrwsygsryq.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/s3tglgz8hr-kbrnm935zg.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/sf8kf2lula-cosvhxvwiu.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/t0qo7o574p-o1o13a6vjx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/t6e3b82hrf-mrlpezrjn3.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/tg53r17ghy-dxx9fxp4il.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/tl7jzaauns-emvs390anx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/tponccyeqo-jjsuc0puko.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/tpsq5dibur-0i3buxo5is.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/u5otg08pyv-rxsg74s51o.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/u795j42zh1-c2jlpeoesf.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/u8428c4e9i-ee0r1s7dh0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ub3t1jpi29-v0zj4ognzu.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/uocis9wxbx-lzl9nlhx6b.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/v0zgfp0y55-87fc7y1x7t.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/veiaw04et4-22vffe00uq.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/vltxs1u3vm-xtxxf3hu2r.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/vsrbd71spn-lcd1t2u6c8.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/vw9sls9bhj-jj8uyg4cgr.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/wicuig8ngi-ynyaa8k90p.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/woe7lbvzjs-tmc1g35s3z.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/xa379ftczi-6pdc2jztkx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/xfxx19nb1f-ft3s53vfgj.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/y7gt6ipfj9-gk0pw8i4co.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ycusp4vj7i-emvs390anx.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/yfc7ypekbg-mlv21k5csn.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ym8tkpcl2i-y7v9cxd14o.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/ypthv7q62w-83jwlth58m.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/z08j93s20s-61n19gt1b8.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/z408qb6q7a-pk9g2wxc8p.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/zap00c0tb5-63fj8s7r0e.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/zbfat7xbof-y7v9cxd14o.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/zxtbjd3lys-keugtjm085.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/compressed/zzna4nrm5w-notf2xhcfb.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/ref/TripPlanner.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/refint/TripPlanner.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/scopedcss/bundle/TripPlanner.styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/scopedcss/projectbundle/TripPlanner.bundle.scp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets.pack.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets/msbuild.TripPlanner.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets/msbuild.TripPlanner.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets/msbuild.build.TripPlanner.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.TripPlanner.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.TripPlanner.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/TripPlanner.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/TripPlanner.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/TripPlanner.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/js/site.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery/dist/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TripPlanner/wwwroot/lib/jquery/dist/jquery.slim.min.map" afterDir="false" />
-    </list>
+    <list default="true" id="c09747c4-360f-4b30-8104-53316ea596bf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -403,7 +18,7 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -418,6 +33,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TripPlanner/Models/ApplicationUser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TripPlanner/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -429,23 +45,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.TripPlanner: http.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.TripPlanner: http.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.TripPlanner: http">
     <configuration name="TripPlanner: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/TripPlanner/TripPlanner.csproj" />
@@ -488,7 +104,13 @@
       <option name="presentableId" value="Default" />
       <updated>1770423480025</updated>
       <workItem from="1770423481323" duration="779000" />
-      <workItem from="1770424353004" duration="1300000" />
+      <workItem from="1770424353004" duration="1682000" />
+      <workItem from="1770736041214" duration="2378000" />
+      <workItem from="1771119796565" duration="14449000" />
+      <workItem from="1771277570285" duration="2070000" />
+      <workItem from="1771710538441" duration="27000" />
+      <workItem from="1771710816386" duration="33000" />
+      <workItem from="1771710905492" duration="566000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <option name="closed" value="true" />
