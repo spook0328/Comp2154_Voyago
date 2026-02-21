@@ -14,8 +14,9 @@ out/
 # Rider
 *.DotSettings.user
 
-# ASP.NET / .NET Core
-appsettings.Development.json
+wwwroot/logs/*.txt
+/TripPlanner/TripPlanner/appsettings.Development.json
+/TripPlanner/TripPlanner/appsettings.json
 
 # Publish / deployment
 *.Publish.xml
@@ -53,3 +54,5 @@ node_modules/
 
 # Others
 *.DS_Store
+
+
