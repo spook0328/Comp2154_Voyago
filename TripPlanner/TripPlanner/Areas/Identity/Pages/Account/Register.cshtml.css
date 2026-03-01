@@ -1,0 +1,54 @@
+﻿.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.col-md-4 {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 0.2rem rgba(78,115,223,0.25);
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #4e73df;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #2e59d9;
+}
+
+/* Validation styling */
+.text-danger {
+    font-size: 0.875rem;
+}

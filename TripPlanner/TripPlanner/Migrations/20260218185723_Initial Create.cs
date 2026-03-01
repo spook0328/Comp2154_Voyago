@@ -31,6 +31,10 @@ namespace TripPlanner.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "text", nullable: false),
+                    ProfilePicture = table.Column<byte[]>(type: "bytea", nullable: true),
+                    ProfilePictureMimeType = table.Column<string>(type: "text", nullable: true),
+                    LastPhoneNumberChangeDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    PhoneNumberChangeCount = table.Column<int>(type: "integer", nullable: false),
                     UserName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
