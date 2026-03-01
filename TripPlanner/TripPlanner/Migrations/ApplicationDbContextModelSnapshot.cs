@@ -17,7 +17,7 @@ namespace TripPlanner.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.1")
+                .HasAnnotation("ProductVersion", "9.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -234,6 +234,186 @@ namespace TripPlanner.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("TripPlanner.Models.Country", b =>
+                {
+                    b.Property<int>("CountryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("country_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("CountryId"));
+
+                    b.Property<string>("CountryLanguage")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)")
+                        .HasColumnName("country_language");
+
+                    b.Property<string>("CountryName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)")
+                        .HasColumnName("country_name");
+
+                    b.HasKey("CountryId");
+
+                    b.ToTable("countries", (string)null);
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.Itinerary", b =>
+                {
+                    b.Property<int>("ItineraryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("itinerary_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ItineraryId"));
+
+                    b.Property<int?>("CountryId")
+                        .HasColumnType("integer")
+                        .HasColumnName("country_id");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("created_at");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("end_date");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("start_date");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("character varying(255)")
+                        .HasColumnName("title");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("user_id");
+
+                    b.HasKey("ItineraryId");
+
+                    b.HasIndex("CountryId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("itineraries", (string)null);
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.ItineraryItem", b =>
+                {
+                    b.Property<int>("ItineraryItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("itinerary_item_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ItineraryItemId"));
+
+                    b.Property<DateTime?>("EndDateTime")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("end_date_time");
+
+                    b.Property<int>("ItineraryId")
+                        .HasColumnType("integer")
+                        .HasColumnName("itinerary_id");
+
+                    b.Property<string>("Note")
+                        .HasColumnType("text")
+                        .HasColumnName("note");
+
+                    b.Property<DateTime>("StartDateTime")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("start_date_time");
+
+                    b.Property<int>("StopOrder")
+                        .HasColumnType("integer")
+                        .HasColumnName("stop_order");
+
+                    b.HasKey("ItineraryItemId");
+
+                    b.HasIndex("ItineraryId");
+
+                    b.ToTable("itinerary_items", (string)null);
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.Location", b =>
+                {
+                    b.Property<int>("LocationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("location_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("LocationId"));
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("address");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("text");
+
+                    b.Property<int>("ItineraryItemId")
+                        .HasColumnType("integer")
+                        .HasColumnName("itinerary_item_id");
+
+                    b.Property<decimal>("Latitude")
+                        .HasColumnType("decimal(9,6)");
+
+                    b.Property<decimal>("Longitude")
+                        .HasColumnType("decimal(9,6)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("name");
+
+                    b.Property<string>("PlaceId")
+                        .HasColumnType("text")
+                        .HasColumnName("place_id");
+
+                    b.HasKey("LocationId");
+
+                    b.HasIndex("ItineraryItemId");
+
+                    b.ToTable("locations", (string)null);
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.Phrase", b =>
+                {
+                    b.Property<int>("PhraseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("phrase_id");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("PhraseId"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("content");
+
+                    b.Property<int>("CountryId")
+                        .HasColumnType("integer")
+                        .HasColumnName("country_id");
+
+                    b.Property<string>("Translation")
+                        .IsRequired()
+                        .HasColumnType("text")
+                        .HasColumnName("translation");
+
+                    b.HasKey("PhraseId");
+
+                    b.HasIndex("CountryId");
+
+                    b.ToTable("phrases", (string)null);
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -283,6 +463,79 @@ namespace TripPlanner.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.Itinerary", b =>
+                {
+                    b.HasOne("TripPlanner.Models.Country", "Country")
+                        .WithMany("Itineraries")
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("TripPlanner.Models.ApplicationUser", "User")
+                        .WithMany("Itineraries")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Country");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.ItineraryItem", b =>
+                {
+                    b.HasOne("TripPlanner.Models.Itinerary", "Itinerary")
+                        .WithMany("ItineraryItems")
+                        .HasForeignKey("ItineraryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Itinerary");
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.Location", b =>
+                {
+                    b.HasOne("TripPlanner.Models.ItineraryItem", "ItineraryItem")
+                        .WithMany("Locations")
+                        .HasForeignKey("ItineraryItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ItineraryItem");
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.Phrase", b =>
+                {
+                    b.HasOne("TripPlanner.Models.Country", "Country")
+                        .WithMany("Phrases")
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Country");
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.ApplicationUser", b =>
+                {
+                    b.Navigation("Itineraries");
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.Country", b =>
+                {
+                    b.Navigation("Itineraries");
+
+                    b.Navigation("Phrases");
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.Itinerary", b =>
+                {
+                    b.Navigation("ItineraryItems");
+                });
+
+            modelBuilder.Entity("TripPlanner.Models.ItineraryItem", b =>
+                {
+                    b.Navigation("Locations");
                 });
 #pragma warning restore 612, 618
         }
