@@ -10,13 +10,13 @@ using Microsoft.EntityFrameworkCore;
 namespace TripPlanner.Controllers
 {
     [Authorize]
-    public class ItineraryContoller : Controller
+    public class ItineraryController : Controller
     {
         // Dependency injection of the database context to interact with the database.
         private readonly ApplicationDbContext _context;
 
         // Constructor to initialize the database context.
-        public ItineraryContoller(ApplicationDbContext context)
+        public ItineraryController(ApplicationDbContext context)
         {
             _context = context;
         }
