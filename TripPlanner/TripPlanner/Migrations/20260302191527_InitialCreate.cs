@@ -56,6 +56,20 @@ namespace TripPlanner.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "countries",
+                columns: table => new
+                {
+                    CountryId = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    CountryName = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false),
+                    CountryLanguage = table.Column<string>(type: "character varying(50)", maxLength: 50, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_countries", x => x.CountryId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -161,6 +175,105 @@ namespace TripPlanner.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "itineraries",
+                columns: table => new
+                {
+                    itinerary_id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    UserId = table.Column<string>(type: "text", nullable: true),
+                    CountryId = table.Column<int>(type: "integer", nullable: true),
+                    Title = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: true),
+                    StartDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_itineraries", x => x.itinerary_id);
+                    table.ForeignKey(
+                        name: "FK_itineraries_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_itineraries_countries_CountryId",
+                        column: x => x.CountryId,
+                        principalTable: "countries",
+                        principalColumn: "CountryId",
+                        onDelete: ReferentialAction.SetNull);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "phrases",
+                columns: table => new
+                {
+                    PhraseId = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    CountryId = table.Column<int>(type: "integer", nullable: false),
+                    Content = table.Column<string>(type: "text", nullable: false),
+                    Translation = table.Column<string>(type: "text", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_phrases", x => x.PhraseId);
+                    table.ForeignKey(
+                        name: "FK_phrases_countries_CountryId",
+                        column: x => x.CountryId,
+                        principalTable: "countries",
+                        principalColumn: "CountryId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "itinerary_items",
+                columns: table => new
+                {
+                    ItineraryItemId = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    ItineraryId = table.Column<int>(type: "integer", nullable: false),
+                    StartDateTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    EndDateTime = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    StopOrder = table.Column<int>(type: "integer", nullable: false),
+                    Note = table.Column<string>(type: "text", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_itinerary_items", x => x.ItineraryItemId);
+                    table.ForeignKey(
+                        name: "FK_itinerary_items_itineraries_ItineraryId",
+                        column: x => x.ItineraryId,
+                        principalTable: "itineraries",
+                        principalColumn: "itinerary_id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "locations",
+                columns: table => new
+                {
+                    LocationId = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    ItineraryItemId = table.Column<int>(type: "integer", nullable: false),
+                    Name = table.Column<string>(type: "text", nullable: false),
+                    Address = table.Column<string>(type: "text", nullable: false),
+                    Latitude = table.Column<decimal>(type: "numeric(9,6)", nullable: false),
+                    Longitude = table.Column<decimal>(type: "numeric(9,6)", nullable: false),
+                    Description = table.Column<string>(type: "text", nullable: true),
+                    PlaceId = table.Column<string>(type: "text", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_locations", x => x.LocationId);
+                    table.ForeignKey(
+                        name: "FK_locations_itinerary_items_ItineraryItemId",
+                        column: x => x.ItineraryItemId,
+                        principalTable: "itinerary_items",
+                        principalColumn: "ItineraryItemId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -197,6 +310,31 @@ namespace TripPlanner.Migrations
                 table: "AspNetUsers",
                 column: "NormalizedUserName",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_itineraries_CountryId",
+                table: "itineraries",
+                column: "CountryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_itineraries_UserId",
+                table: "itineraries",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_itinerary_items_ItineraryId",
+                table: "itinerary_items",
+                column: "ItineraryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_locations_ItineraryItemId",
+                table: "locations",
+                column: "ItineraryItemId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_phrases_CountryId",
+                table: "phrases",
+                column: "CountryId");
         }
 
         /// <inheritdoc />
@@ -218,10 +356,25 @@ namespace TripPlanner.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "locations");
+
+            migrationBuilder.DropTable(
+                name: "phrases");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
+                name: "itinerary_items");
+
+            migrationBuilder.DropTable(
+                name: "itineraries");
+
+            migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "countries");
         }
     }
 }
