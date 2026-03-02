@@ -35,6 +35,7 @@ public class ItineraryItemController : ControllerBase
     
     // Itinerary Ownership Check
     /*
+    // admin, antiforgery
     private async Task<Itinerary?> GetOwnedItineraryAsync(int itineraryId)
     {
         var userId = GetCurrentUserId();

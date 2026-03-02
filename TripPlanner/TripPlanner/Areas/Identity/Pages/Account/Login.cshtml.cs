@@ -20,6 +20,14 @@ namespace TripPlanner.Areas.Identity.Pages.Account
 {
     public class LoginModel : PageModel
     {
+        // UserManager is needed to check the user's role after a successful login
+        public LoginModel(SignInManager<ApplicationUser> signInManager, ILogger<LoginModel> logger, UserManager<ApplicationUser> userManager)
+        {
+            _signInManager = signInManager;
+            _logger = logger;
+            _userManager = userManager; // assign the UserManager to a private field for later use
+        }
+
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
         private readonly UserManager<ApplicationUser> _userManager;

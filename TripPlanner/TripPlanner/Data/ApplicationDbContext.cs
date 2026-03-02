@@ -10,8 +10,8 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         
     }
+    
     /*
     public DbSet<Itinerary> Itineraries { get; set; }
     public DbSet<ItineraryItem> ItineraryItems { get; set; }
     */
-}
