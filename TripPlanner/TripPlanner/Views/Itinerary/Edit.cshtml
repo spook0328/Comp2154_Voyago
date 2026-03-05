@@ -1,0 +1,42 @@
+@model Itinerary
+
+@{
+    ViewData["Title"]="Edit Itinerary";
+}
+
+<!DOCTYPE html>
+
+<h2>@ViewBag.Title</h2>
+
+<body>
+<form asp-action="Edit" method="post">
+    <!--- Hidden field including Id in form submission, linking data to the correct record in
+    the database. --->
+    @Html.HiddenFor(model => model.Id)
+    
+    <div class="edit-form">
+        <label asp-for="Title" class="control-label"></label>
+        <input asp-for="Title" class="form-control"/>
+    </div>
+    
+    <div class="edit-form">
+        <label asp-for="Description" class="control-label"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+    
+    <div class="edit-form">
+        <label asp-for="StartDate" class="control-label"></label>
+        <input asp-for="StartDate" class="form-control"/>
+    </div>
+    
+    <div class="edit-form">
+        <label asp-for="EndDate" class="control-label"></label>
+        <input asp-for="EndDate" class="form-control"/>
+    </div>
+    
+    <div class="edit-form">
+        <input type="submit" value="Confirm" class="btn btn-primary"/>
+        <a asp-action="Index" class="btn btn-warning">Cancel</a>
+    </div>
+</form>
+</body>

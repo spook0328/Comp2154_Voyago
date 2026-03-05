@@ -29,3 +29,89 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+.page-title{
+  text-align:center;
+  margin-bottom:25px;
+  font-weight:600;
+}
+
+/* center the form */
+.form-container{
+  max-width:500px;
+  margin:auto;
+  padding:30px;
+  background:#ffffff;
+  border-radius:10px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* form groups */
+.create-form{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:18px;
+}
+
+/* labels */
+.create-form label{
+  font-weight:600;
+  margin-bottom:6px;
+}
+
+/* inputs */
+.create-form input,
+.create-form textarea{
+  padding:10px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  font-size:14px;
+  transition: border 0.2s;
+}
+
+.create-form input:focus,
+.create-form textarea:focus{
+  outline:none;
+  border-color:#007bff;
+}
+
+/* textarea size */
+textarea{
+  resize:vertical;
+  min-height:80px;
+}
+
+/* buttons container */
+.button-group{
+  display:flex;
+  gap:10px;
+  margin-top:10px;
+}
+
+/* create button */
+.btn-create{
+  background:#007bff;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.btn-create:hover{
+  background:#0056b3;
+}
+
+/* cancel button */
+.btn-cancel{
+  background:#6c757d;
+  color:white;
+  padding:10px 18px;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+.btn-cancel:hover{
+  background:#545b62;
+}

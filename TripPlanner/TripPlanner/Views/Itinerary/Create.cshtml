@@ -1,0 +1,36 @@
+@model Itinerary
+
+@{
+    ViewData["Title"] = "Create Itinerary";
+}
+
+<!DOCTYPE html>
+
+<h2>Create Itinerary</h2>
+
+<form asp-action="Create" method="post">
+    <div class="create-form">
+        <label asp-for="Title"></label>
+        <input asp-for="Title" />
+    </div>
+    
+    <div class="create-form">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description"></textarea>
+    </div>
+    
+    <div class="create-form">
+        <label asp-for="StartDate"></label>
+        <input asp-for="StartDate" />
+    </div>
+    
+    <div class="create-form">
+        <label asp-for="EndDate"></label>
+        <input asp-for="EndDate" />
+    </div>
+    
+    <div class="button-group">
+        <input type="submit" value="Create" class="btn-create"/>
+        <a asp-action="Index" class="btn-cancel">Cancel</a>
+    </div>
+</form>

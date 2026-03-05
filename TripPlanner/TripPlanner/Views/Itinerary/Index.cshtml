@@ -1,0 +1,28 @@
+@model IEnumerable<TripPlanner.Models.Itinerary>
+
+@{
+    ViewData["Title"]="Itineraries";
+}
+
+<!DOCTYPE html>
+
+<body>
+<h1>Itineraries</h1>
+
+<a asp-action="Create" class="btn btn-primary">Create New Itinerary</a>
+@if (Model.Any())
+{
+    <!---Foreach loop is used to display the itineraries--->
+    @foreach (var item in Model)
+    {
+        <div>
+            <h3>@item.Title</h3>
+            <p>@item.Description</p>
+        </div>
+    }
+}
+else
+{
+    <p>No itineraries have been created.</p>
+}
+</body>
