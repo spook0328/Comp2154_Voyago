@@ -28,6 +28,8 @@ public class ItineraryItemController : ControllerBase
         _userManager = userManager;
     }
     
+    
+    
     // Get Current User Id
     private string GetCurrentUserId() => _userManager.GetUserId(User);
     
@@ -151,6 +153,8 @@ public class ItineraryItemController : ControllerBase
         await _context.SaveChangesAsync();
         return NoContent();
     }
+    
+    
     
     // Delete Item (DELETE) /itineraries/{itineraryId}/items/{itemId}
     [HttpDelete("{itemId:int}")]
