@@ -8,11 +8,7 @@ namespace TripPlanner.Models;
 public class Location
 {
     // PK
-    public int LocationId { get; set; }
-    
-    // FK From ItineraryItem
-    [Required]
-    public int ItineraryItemId { get; set; }
+    public int Id { get; set; }
     
     [Required]
     public string Name { get; set; } = null!;

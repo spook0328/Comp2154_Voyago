@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using TripPlanner.Data;
 using TripPlanner.Dtos.ItineraryItem;
 using TripPlanner.Models;
@@ -33,7 +34,7 @@ public class ItineraryItemController : ControllerBase
     {
         return _userManager.GetUserId(User);
     }
-    /*
+    
     // Itinerary Ownership Check
     private async Task<Itinerary?> GetOwnedItineraryAsync(int itineraryId)
     {
@@ -169,7 +170,7 @@ public class ItineraryItemController : ControllerBase
 
         return NoContent();
     }
-    */
+    
 }
 
 

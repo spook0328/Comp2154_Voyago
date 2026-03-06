@@ -30,6 +30,5 @@ public class Itinerary
     // navigation property back to the user
     public ApplicationUser? User { get; set; }
     public Country? Country { get; set; }
-
     public ICollection<ItineraryItem> ItineraryItems { get; set; } = new List<ItineraryItem>();
 }

@@ -177,9 +177,6 @@ namespace TripPlanner.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("boolean");
 
-                    b.Property<DateTime?>("LastPhoneNumberChangeDate")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("boolean");
 
@@ -200,17 +197,8 @@ namespace TripPlanner.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("text");
 
-                    b.Property<int>("PhoneNumberChangeCount")
-                        .HasColumnType("integer");
-
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("boolean");
-
-                    b.Property<byte[]>("ProfilePicture")
-                        .HasColumnType("bytea");
-
-                    b.Property<string>("ProfilePictureMimeType")
-                        .HasColumnType("text");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("text");
@@ -297,16 +285,19 @@ namespace TripPlanner.Migrations
 
             modelBuilder.Entity("TripPlanner.Models.ItineraryItem", b =>
                 {
-                    b.Property<int>("ItineraryItemId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ItineraryItemId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime?>("EndDateTime")
+                    b.Property<DateTime>("EndDateTime")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("ItineraryId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("LocationId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Note")
@@ -318,20 +309,22 @@ namespace TripPlanner.Migrations
                     b.Property<int>("StopOrder")
                         .HasColumnType("integer");
 
-                    b.HasKey("ItineraryItemId");
+                    b.HasKey("Id");
 
                     b.HasIndex("ItineraryId");
+
+                    b.HasIndex("LocationId");
 
                     b.ToTable("itinerary_items", (string)null);
                 });
 
             modelBuilder.Entity("TripPlanner.Models.Location", b =>
                 {
-                    b.Property<int>("LocationId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("LocationId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -339,9 +332,6 @@ namespace TripPlanner.Migrations
 
                     b.Property<string>("Description")
                         .HasColumnType("text");
-
-                    b.Property<int>("ItineraryItemId")
-                        .HasColumnType("integer");
 
                     b.Property<decimal>("Latitude")
                         .HasColumnType("decimal(9,6)");
@@ -356,9 +346,7 @@ namespace TripPlanner.Migrations
                     b.Property<string>("PlaceId")
                         .HasColumnType("text");
 
-                    b.HasKey("LocationId");
-
-                    b.HasIndex("ItineraryItemId");
+                    b.HasKey("Id");
 
                     b.ToTable("locations", (string)null);
                 });
@@ -465,18 +453,15 @@ namespace TripPlanner.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Itinerary");
-                });
-
-            modelBuilder.Entity("TripPlanner.Models.Location", b =>
-                {
-                    b.HasOne("TripPlanner.Models.ItineraryItem", "ItineraryItem")
-                        .WithMany("Locations")
-                        .HasForeignKey("ItineraryItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                    b.HasOne("TripPlanner.Models.Location", "Location")
+                        .WithMany("ItineraryItems")
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("ItineraryItem");
+                    b.Navigation("Itinerary");
+
+                    b.Navigation("Location");
                 });
 
             modelBuilder.Entity("TripPlanner.Models.Phrase", b =>
@@ -507,9 +492,9 @@ namespace TripPlanner.Migrations
                     b.Navigation("ItineraryItems");
                 });
 
-            modelBuilder.Entity("TripPlanner.Models.ItineraryItem", b =>
+            modelBuilder.Entity("TripPlanner.Models.Location", b =>
                 {
-                    b.Navigation("Locations");
+                    b.Navigation("ItineraryItems");
                 });
 #pragma warning restore 612, 618
         }

@@ -15,7 +15,7 @@ namespace TripPlanner.Controllers
         {
             _context = context;
         }
-/*
+
         // GET: Itinerary/Index
         [HttpGet]
 
@@ -200,6 +200,6 @@ namespace TripPlanner.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-        */
+        
     }
 }
