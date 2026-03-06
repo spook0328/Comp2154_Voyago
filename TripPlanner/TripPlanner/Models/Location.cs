@@ -23,9 +23,11 @@ public class Location
     [Required]
     [Column(TypeName = "decimal(9,6)")]
     public decimal Latitude { get; set; }
+    
     [Required]
     [Column(TypeName = "decimal(9,6)")]
     public decimal Longitude { get; set; }
+    
     public string? Description { get; set; }
     
     public string? PlaceId { get; set; }

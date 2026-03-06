@@ -14,7 +14,6 @@ public class ItineraryItem
     [Required]
     public int ItineraryId { get; set; }
     
-    
     [Required]
     public DateTime StartDateTime { get; set; }
     
@@ -25,7 +24,7 @@ public class ItineraryItem
     
     public string? Note { get; set; }
     
-    public Itinerary Itinerary { get; set; }
+    public Itinerary Itinerary { get; set; } = null!;
     public List<Location> Locations { get; set; } = new();
 
 }

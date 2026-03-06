@@ -23,8 +23,7 @@ public class Itinerary
 
     [Required]
     public DateTime StartDate { get; set; }
-
-    [Required]
+    
     public DateTime EndDate { get; set; }
 
     // navigation property back to the user
