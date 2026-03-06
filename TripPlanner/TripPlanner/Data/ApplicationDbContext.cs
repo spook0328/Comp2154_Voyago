@@ -17,6 +17,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         base.OnModelCreating(modelBuilder);
             
+        // TODO: translate
         // === 表名映射部分 ===
         modelBuilder.Entity<Country>().ToTable("countries");
         modelBuilder.Entity<Itinerary>().ToTable("itineraries");
@@ -24,6 +25,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
         modelBuilder.Entity<Location>().ToTable("locations");
         modelBuilder.Entity<Phrase>().ToTable("phrases");
         
+        // TODO: translate
         // === 关系映射部分 ===
         modelBuilder.Entity<Itinerary>()
             .HasOne(i => i.User)
@@ -54,5 +56,23 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
             .WithMany(c => c.Phrases)
             .HasForeignKey(p => p.CountryId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        // === ItineraryAttraction join table - composite PK ===
+        modelBuilder.Entity<ItineraryAttraction>()
+            .HasKey(ia => new { ia.ItineraryId, ia.AttractionId });
+
+        modelBuilder.Entity<ItineraryAttraction>()
+            .HasOne(ia => ia.Itinerary)
+            .WithMany(i => i.ItineraryAttractions)
+            .HasForeignKey(ia => ia.ItineraryId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        modelBuilder.Entity<ItineraryAttraction>()
+            .HasOne(ia => ia.Attraction)
+            .WithMany(a => a.ItineraryAttractions)
+            .HasForeignKey(ia => ia.AttractionId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        // TODO: add attraction field mappings/constaints here once fields are defined in the Attraction model
     }
 }

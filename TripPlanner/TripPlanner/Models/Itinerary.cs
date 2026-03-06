@@ -32,4 +32,7 @@ public class Itinerary
     public Country? Country { get; set; }
     public List<ItineraryItem> ItineraryItems { get; set; } = new();
 
+    // navigation property to the attractions included in this itinerary 
+    // TODO: We may want to change this to a many-to-many relationship if we want to allow the same attraction to be included in multiple itineraries without duplication
+    public List<ItineraryAttraction> ItineraryAttractions { get; set; } = new();
 }
