@@ -116,7 +116,7 @@ public class LocationController : ControllerBase
         var location = await _context.Locations.FindAsync(id);
         if (location == null) return NotFound();
 
-        // 刪除前確認沒有 ItineraryItem 使用此 Location
+        // To ensure no ItineraryItem using this Location
         var used = await _context.ItineraryItems.AnyAsync(i => i.LocationId == id);
         if (used) return BadRequest("Location is used by an itinerary item.");
 

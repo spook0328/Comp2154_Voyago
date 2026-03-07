@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TripPlanner.Data;
 using TripPlanner.Models;
+using TripPlanner.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // Add services for controllers with views. Necessary for MVC functionality in the application.
 builder.Services.AddControllersWithViews();
+
+// Add HttpClient service
+builder.Services.AddHttpClient<GooglePlacesService>();
 
 // Set False for now
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
