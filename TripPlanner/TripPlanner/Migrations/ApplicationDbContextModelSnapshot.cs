@@ -177,9 +177,6 @@ namespace TripPlanner.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("boolean");
 
-                    b.Property<DateTimeOffset?>("LastPhoneNumberChangeDate")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("boolean");
 
@@ -200,17 +197,8 @@ namespace TripPlanner.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("text");
 
-                    b.Property<int>("PhoneNumberChangeCount")
-                        .HasColumnType("integer");
-
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("boolean");
-
-                    b.Property<byte[]>("ProfilePicture")
-                        .HasColumnType("bytea");
-
-                    b.Property<string>("ProfilePictureMimeType")
-                        .HasColumnType("text");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("text");
@@ -305,7 +293,7 @@ namespace TripPlanner.Migrations
                         new
                         {
                             Id = 2,
-                            EndDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            EndDate = new DateTime(2026, 6, 14, 9, 0, 0, 0, DateTimeKind.Utc),
                             StartDate = new DateTime(2026, 3, 15, 9, 0, 0, 0, DateTimeKind.Utc),
                             Title = "Second Trip"
                         });
@@ -313,16 +301,19 @@ namespace TripPlanner.Migrations
 
             modelBuilder.Entity("TripPlanner.Models.ItineraryItem", b =>
                 {
-                    b.Property<int>("ItineraryItemId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ItineraryItemId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime?>("EndDateTime")
+                    b.Property<DateTime>("EndDateTime")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<int>("ItineraryId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("LocationId")
                         .HasColumnType("integer");
 
                     b.Property<string>("Note")
@@ -334,39 +325,48 @@ namespace TripPlanner.Migrations
                     b.Property<int>("StopOrder")
                         .HasColumnType("integer");
 
-                    b.HasKey("ItineraryItemId");
+                    b.HasKey("Id");
 
-                    b.HasIndex("ItineraryId", "StopOrder")
-                        .IsUnique();
+                    b.HasIndex("ItineraryId");
+
+                    b.HasIndex("LocationId");
 
                     b.ToTable("itinerary_items", (string)null);
 
                     b.HasData(
                         new
                         {
-                            ItineraryItemId = 1,
+                            Id = 1,
+                            EndDateTime = new DateTime(2026, 2, 15, 9, 0, 0, 0, DateTimeKind.Utc),
                             ItineraryId = 1,
+                            LocationId = 1,
                             StartDateTime = new DateTime(2026, 1, 16, 9, 0, 0, 0, DateTimeKind.Utc),
                             StopOrder = 1
                         },
                         new
                         {
-                            ItineraryItemId = 2,
+                            Id = 2,
+                            EndDateTime = new DateTime(2026, 3, 15, 9, 0, 0, 0, DateTimeKind.Utc),
                             ItineraryId = 1,
+                            LocationId = 2,
                             StartDateTime = new DateTime(2026, 2, 16, 9, 0, 0, 0, DateTimeKind.Utc),
                             StopOrder = 2
                         },
                         new
                         {
-                            ItineraryItemId = 3,
+                            Id = 3,
+                            EndDateTime = new DateTime(2026, 4, 15, 9, 0, 0, 0, DateTimeKind.Utc),
                             ItineraryId = 2,
+                            LocationId = 3,
                             StartDateTime = new DateTime(2026, 3, 16, 9, 0, 0, 0, DateTimeKind.Utc),
                             StopOrder = 3
                         },
                         new
                         {
-                            ItineraryItemId = 4,
+                            Id = 4,
+                            EndDateTime = new DateTime(2026, 5, 15, 9, 0, 0, 0, DateTimeKind.Utc),
                             ItineraryId = 2,
+                            LocationId = 4,
                             StartDateTime = new DateTime(2026, 4, 16, 9, 0, 0, 0, DateTimeKind.Utc),
                             StopOrder = 4
                         });
@@ -374,11 +374,11 @@ namespace TripPlanner.Migrations
 
             modelBuilder.Entity("TripPlanner.Models.Location", b =>
                 {
-                    b.Property<int>("LocationId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("LocationId"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -386,9 +386,6 @@ namespace TripPlanner.Migrations
 
                     b.Property<string>("Description")
                         .HasColumnType("text");
-
-                    b.Property<int>("ItineraryItemId")
-                        .HasColumnType("integer");
 
                     b.Property<decimal>("Latitude")
                         .HasColumnType("decimal(9,6)");
@@ -403,45 +400,39 @@ namespace TripPlanner.Migrations
                     b.Property<string>("PlaceId")
                         .HasColumnType("text");
 
-                    b.HasKey("LocationId");
-
-                    b.HasIndex("ItineraryItemId");
+                    b.HasKey("Id");
 
                     b.ToTable("locations", (string)null);
 
                     b.HasData(
                         new
                         {
-                            LocationId = 1,
+                            Id = 1,
                             Address = "N/A For Test",
-                            ItineraryItemId = 1,
                             Latitude = 45.504537m,
                             Longitude = -73.556094m,
                             Name = "Notre-Dame Basilica"
                         },
                         new
                         {
-                            LocationId = 2,
+                            Id = 2,
                             Address = "Isfahan, Isfahan Province, Iran",
-                            ItineraryItemId = 2,
                             Latitude = 32.65745m,
                             Longitude = 51.677778m,
                             Name = "Naqsh-e Jahan Square"
                         },
                         new
                         {
-                            LocationId = 3,
+                            Id = 3,
                             Address = "Yuchi Township, Nantou County, Taiwan",
-                            ItineraryItemId = 3,
                             Latitude = 23.866667m,
                             Longitude = 120.916667m,
                             Name = "Sun Moon Lake"
                         },
                         new
                         {
-                            LocationId = 4,
+                            Id = 4,
                             Address = "Tuojiang Town, Fenghuang County, Xiangxi Tujia and Miao Autonomous Prefecture of Hunan Province",
-                            ItineraryItemId = 3,
                             Latitude = 27.952822m,
                             Longitude = 109.600989m,
                             Name = "Fenghuang Ancient City"
@@ -550,18 +541,15 @@ namespace TripPlanner.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Itinerary");
-                });
-
-            modelBuilder.Entity("TripPlanner.Models.Location", b =>
-                {
-                    b.HasOne("TripPlanner.Models.ItineraryItem", "ItineraryItem")
-                        .WithMany("Locations")
-                        .HasForeignKey("ItineraryItemId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                    b.HasOne("TripPlanner.Models.Location", "Location")
+                        .WithMany("ItineraryItems")
+                        .HasForeignKey("LocationId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("ItineraryItem");
+                    b.Navigation("Itinerary");
+
+                    b.Navigation("Location");
                 });
 
             modelBuilder.Entity("TripPlanner.Models.Phrase", b =>
@@ -592,9 +580,9 @@ namespace TripPlanner.Migrations
                     b.Navigation("ItineraryItems");
                 });
 
-            modelBuilder.Entity("TripPlanner.Models.ItineraryItem", b =>
+            modelBuilder.Entity("TripPlanner.Models.Location", b =>
                 {
-                    b.Navigation("Locations");
+                    b.Navigation("ItineraryItems");
                 });
 #pragma warning restore 612, 618
         }
