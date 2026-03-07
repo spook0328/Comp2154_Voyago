@@ -281,6 +281,22 @@ namespace TripPlanner.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("itineraries", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EndDate = new DateTime(2026, 3, 14, 9, 0, 0, 0, DateTimeKind.Utc),
+                            StartDate = new DateTime(2026, 1, 15, 9, 0, 0, 0, DateTimeKind.Utc),
+                            Title = "First Trip"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            EndDate = new DateTime(2026, 6, 14, 9, 0, 0, 0, DateTimeKind.Utc),
+                            StartDate = new DateTime(2026, 3, 15, 9, 0, 0, 0, DateTimeKind.Utc),
+                            Title = "Second Trip"
+                        });
                 });
 
             modelBuilder.Entity("TripPlanner.Models.ItineraryItem", b =>
@@ -316,6 +332,44 @@ namespace TripPlanner.Migrations
                     b.HasIndex("LocationId");
 
                     b.ToTable("itinerary_items", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EndDateTime = new DateTime(2026, 2, 15, 9, 0, 0, 0, DateTimeKind.Utc),
+                            ItineraryId = 1,
+                            LocationId = 1,
+                            StartDateTime = new DateTime(2026, 1, 16, 9, 0, 0, 0, DateTimeKind.Utc),
+                            StopOrder = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            EndDateTime = new DateTime(2026, 3, 15, 9, 0, 0, 0, DateTimeKind.Utc),
+                            ItineraryId = 1,
+                            LocationId = 2,
+                            StartDateTime = new DateTime(2026, 2, 16, 9, 0, 0, 0, DateTimeKind.Utc),
+                            StopOrder = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            EndDateTime = new DateTime(2026, 4, 15, 9, 0, 0, 0, DateTimeKind.Utc),
+                            ItineraryId = 2,
+                            LocationId = 3,
+                            StartDateTime = new DateTime(2026, 3, 16, 9, 0, 0, 0, DateTimeKind.Utc),
+                            StopOrder = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            EndDateTime = new DateTime(2026, 5, 15, 9, 0, 0, 0, DateTimeKind.Utc),
+                            ItineraryId = 2,
+                            LocationId = 4,
+                            StartDateTime = new DateTime(2026, 4, 16, 9, 0, 0, 0, DateTimeKind.Utc),
+                            StopOrder = 4
+                        });
                 });
 
             modelBuilder.Entity("TripPlanner.Models.Location", b =>
@@ -349,6 +403,40 @@ namespace TripPlanner.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("locations", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "N/A For Test",
+                            Latitude = 45.504537m,
+                            Longitude = -73.556094m,
+                            Name = "Notre-Dame Basilica"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Address = "Isfahan, Isfahan Province, Iran",
+                            Latitude = 32.65745m,
+                            Longitude = 51.677778m,
+                            Name = "Naqsh-e Jahan Square"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Address = "Yuchi Township, Nantou County, Taiwan",
+                            Latitude = 23.866667m,
+                            Longitude = 120.916667m,
+                            Name = "Sun Moon Lake"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Address = "Tuojiang Town, Fenghuang County, Xiangxi Tujia and Miao Autonomous Prefecture of Hunan Province",
+                            Latitude = 27.952822m,
+                            Longitude = 109.600989m,
+                            Name = "Fenghuang Ancient City"
+                        });
                 });
 
             modelBuilder.Entity("TripPlanner.Models.Phrase", b =>
